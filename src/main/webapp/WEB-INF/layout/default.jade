@@ -1,13 +1,15 @@
 -@ val pageTitle: String = "Scum"
+-@ val header: scala.xml.Elem = <nothing />
 -@ val body: String
 
 !!!
 html(lang="en")
     head
-        link(rel="stylesheet" href="style.css")
+        link(rel="stylesheet" href="/style.css")
         title #{pageTitle}
     body
         header#header-bar
             h1 #{pageTitle}
+            span #{header}
         .body-container
             != body

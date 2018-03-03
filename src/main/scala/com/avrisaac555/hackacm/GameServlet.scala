@@ -34,10 +34,14 @@ class GameServlet(private val games: mutable.MutableList[Game] = mutable.Mutable
     get("/:id") {
         val g = getGameById(params("id").toLong).getOrElse(halt(404, "Specified game not found."))
 
-        jade("/game", "layout" -> "WEB-INF/layout/default.jade", "game" -> g)
+        contentType = "text/html"
+        jade("/game",
+             "layout" -> "WEB-INF/layout/default.jade",
+             "game" -> g,
+             "header" -> <span>{g.toString}</span>)
     }
 
     get("/:id/join") {
-        
+
     }
 }
