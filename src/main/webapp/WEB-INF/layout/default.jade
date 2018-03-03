@@ -1,0 +1,13 @@
+-@ val pageTitle: String = "Scum"
+-@ val body: String
+
+!!!
+html(lang="en")
+    head
+        link(rel="stylesheet" href="style.css")
+        title #{pageTitle}
+    body
+        header#header-bar
+            h1 #{pageTitle}
+        .body-container
+            != body
