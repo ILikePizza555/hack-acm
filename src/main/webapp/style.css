@@ -19,11 +19,14 @@ html, body {
 }
 
 #header-bar > h1 {
-    margin: 0;
+    display: inline-block;
+    margin: 8px 0 4px 0;
 }
 
 .body-container {
     width: 37vw;
 
-    color: #cbcecd;
+    color: #444645;
+
+    margin: 0 auto;
 }

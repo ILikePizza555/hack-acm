@@ -2,6 +2,8 @@ import com.avrisaac55.hackacm._
 import org.scalatra._
 import javax.servlet.ServletContext
 
+import com.avrisaac555.hackacm.{GameServlet, LoginServlet}
+
 class ScalatraBootstrap extends LifeCycle {
     override def init(context: ServletContext) {
         val gameServlet = new GameServlet
