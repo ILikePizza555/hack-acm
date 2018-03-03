@@ -1,5 +1,7 @@
 # Hack ACM #
 
+Code written for the Hack-ACM hackathon.
+
 ## Build & Run ##
 
 ```sh
