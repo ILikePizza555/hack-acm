@@ -1,4 +1,3 @@
-import com.avrisaac555.hackacm._
 import org.scalatra._
 import javax.servlet.ServletContext
 
